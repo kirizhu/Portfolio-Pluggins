@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
-    <!-- Superslides file -->
-    <link rel="stylesheet" href="css/superslides.css" />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Superslides CSS -->
+    <link rel="stylesheet" href="css/superslides.css" />
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -63,10 +66,35 @@
         </div>
       </div>
     </div>
-    <!-- Superslides file -->
+
+    <div id="skills" class="skillsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>A representation of my proficiency in each technical skill</p>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="64">
+                <span class="percent">64</span>
+                <canvas height="152" width="152"> </canvas>
+              </span>
+              <h4>Javascript</h4>
+              <p>Used in most Web based projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Superslides JS-->
     <script src="js/jquery.superslides.min.js"></script>
-    <!-- Typed file -->
+    <!-- Typed JS-->
     <script src="js/typed.min.js"></script>
+    <!-- Owl JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- PieChart JS-->
+    <script src="js/jquery.easypiechart.min.js"></script>
     <!-- Bootstrap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
