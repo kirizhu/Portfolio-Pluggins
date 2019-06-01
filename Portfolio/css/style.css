@@ -1,24 +1,3 @@
-.titleMessage{
-    position: absolute;
-    width: 100%;
-    height: 250px;
-    margin-top: -125px;
-    top: 50%;
-    z-index: 5;
-    text-align: center;
-    color: white;
-}
-.heading .main{
-    text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.7);
-    font-size: 40px;
-    font-weight: 200;
-    margin-bottom: 5px;
-}
-.heading .sub{
-    font-weight: 200;
-    text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.7);
-    font-size: 25px;
-}
 .overlay {
     width: 100%;
     height: 100%;
@@ -45,3 +24,31 @@
   right: 20px;
   background-image: url(../img/icons/icons8-next-page-100.png);
 }
+.titleMessage{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  margin-top: -125px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  color: white;
+}
+.heading .main{
+  text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.7);
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.heading .sub{
+  font-weight: 200;
+  text-shadow: 0px 2px 5px rgb(0, 0, 0, 0.7);
+  font-size: 25px;
+}
+.section {
+  padding: 100px 0px;
+}
+.aboutImg{
+  max-width: 100%;
+}
+
