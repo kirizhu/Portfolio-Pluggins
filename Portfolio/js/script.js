@@ -36,7 +36,7 @@ $(document).ready(function() {
   let skillsTopOffset = $(".skillsSection").offset().top;
   /* Creating a window scroll event (when window is scrolled run this function) */
   $(window).scroll(function() {
-    console.log(window.pageYOffset);
+    /* console.log(window.pageYOffset); */
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       /* getting PieChart to work with class using JQuery */
       $(".chart").easyPieChart({

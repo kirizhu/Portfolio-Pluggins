@@ -18,8 +18,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="js/countUp.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f2d806a306.js"></script>
   </head>
   <body>
     <div id="slides">
@@ -46,7 +50,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <img class="aboutImg" src="/img/about.jpg" alt="" />
+            <img class="aboutImg" src="./img/about.jpg" alt="" />
           </div>
           <div class="col-md-7">
             <h4 class="">My name is Eddy Garcia</h4>
@@ -120,6 +124,68 @@
         </div>
       </div>
     </div>
+
+    <div id="stats" class="statsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <!-- <i class="fab fa-app-store-ios"></i> -->
+                  <i class="fab fa-apple"></i>
+                 <!--  <i class="fab fa-android"></i> -->
+                </div>
+                <div class="squareContent">
+                    <h2 id="counter1" class="counter">3</h2>
+                    <h3>iOS Projects</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fab fa-android"></i>
+                </div>
+                <div class="squareContent">
+                    <h2 id="counter2" class="counter">4</h2>
+                    <h3>Android Projects</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-file-code"></i>
+                </div>
+                <div class="squareContent">
+                    <h2 id="counter3" class="counter">5</h2>
+                    <h3>Web Projects</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="squareContent">
+                    <h2 id="counter4" class="counter">4</h2>
+                    <h3>React Native Projects</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Superslides JS-->
     <script src="js/jquery.superslides.min.js"></script>
     <!-- Typed JS-->
@@ -140,5 +206,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
+    
   </body>
 </html>
