@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  /* getting slides to work with id# using JQuery */
+  /* getting SLIDES to work with id# using JQuery */
   $("#slides").superslides({
     animation: "fade",
     play: 4000,
     pagination: false
   });
-  /* getting Typed to work with class using vanillaJS */
+  /* getting TYPED to work with class using vanillaJS */
   var typed = new Typed(".typed", {
     strings: ["Android/iOS Developer.", "Software Engineer.", "Web Developer."],
     typeSpeed: 70,
@@ -13,7 +13,7 @@ $(document).ready(function() {
     startDelay: 1000,
     showCursor: false
   });
-  /* getting Owl to work with class using JQuery */
+  /* getting OWL to work with class using JQuery */
   $(".owl-carousel").owlCarousel({
     loop: true,
     items: 4,
@@ -32,7 +32,7 @@ $(document).ready(function() {
       }
     }
   });
-  /* getting skillsSection class position from the top and storing it in our variable using JQuery */
+  /* PIECHART, skillsSection class position from the top and storing it in our variable using JQuery */
   let skillsTopOffset = $(".skillsSection").offset().top;
   /* Creating a window scroll event (when window is scrolled run this function) */
   $(window).scroll(function() {
@@ -55,4 +55,34 @@ $(document).ready(function() {
       });
     }
   });
+  /* FANCYBOX */
+  $("[data-fancybox]").fancybox();
+
+  /* ISOTPE target the items */
+  $(".items").isotope({
+    filter: "*",
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false
+    }
+  });
+ /* ISOTPE filter the items */
+  $('#filters a').click(function () {
+    $('#filters .current').removeClass('current');
+    $(this).addClass('current');
+
+    let selector = $(this).attr('data-filter');
+    $(".items").isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 1500,
+        easing: "linear",
+        queue: false
+      }
+    });
+    /* dont go to any link */
+    return false;
+  })
+  
 });
