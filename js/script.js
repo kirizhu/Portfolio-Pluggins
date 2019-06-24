@@ -1,3 +1,8 @@
+/* loader fade out */
+$(window).on("load", function() {
+  $(".loader").fadeOut(600);
+});
+
 $(document).ready(function() {
   /* getting SLIDES to work with id# using JQuery */
   $("#slides").superslides({
@@ -67,12 +72,12 @@ $(document).ready(function() {
       queue: false
     }
   });
- /* ISOTPE filter the items */
-  $('#filters a').click(function () {
-    $('#filters .current').removeClass('current');
-    $(this).addClass('current');
+  /* ISOTPE filter the items */
+  $("#filters a").click(function() {
+    $("#filters .current").removeClass("current");
+    $(this).addClass("current");
 
-    let selector = $(this).attr('data-filter');
+    let selector = $(this).attr("data-filter");
     $(".items").isotope({
       filter: selector,
       animationOptions: {
@@ -83,6 +88,30 @@ $(document).ready(function() {
     });
     /* dont go to any link */
     return false;
-  })
-  
+  });
+
+  /* Fixed navbar on scroll when navbar at top of window */
+  const nav = $("#navigation");
+  const navTop = nav.offset().top;
+
+  $(window).on("scroll", stickyNavigation);
+
+  function stickyNavigation() {
+    let body = $("body");
+    if ($(window).scrollTop() >= navTop) {
+      body.css("padding-top", nav.outerHeight() + "px");
+      body.addClass("fixedNav");
+    } else {
+      body.css("padding-top", 0);
+      body.removeClass("fixedNav");
+    }
+  }
+
+  /* Smooth scroll */
+  $("#navigation li a").click(function(e) {
+    e.preventDefault();
+    let targetElement = $(this).attr("href");
+    let targetPosition = $(targetElement).offset().top;
+    $("html,body").animate({ scrollTop: targetPosition - 50 }, "slow");
+  });
 });
