@@ -1,5 +1,5 @@
 # Portfolio
-This is my Portfolio site. Created during my spare time using HTML CSS and Javascript mostly JQuery 
+This is my Portfolio site. Created during my spare time using HTML CSS and Javascript (mostly JQuery)
 
 I used several plugins and modules which included:
 
