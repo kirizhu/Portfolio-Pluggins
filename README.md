@@ -13,6 +13,6 @@ PieChart
 Isotope
 Typed
 
-You can view the finished site through this link https://kirizhu.github.io/Portfolio/
+You can view the finished site through this link https://kirizhu.github.io/Portfolio-Pluggins/
 
 Oh and please let me know if you find any bugs :)
